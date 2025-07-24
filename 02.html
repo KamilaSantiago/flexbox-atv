@@ -5,23 +5,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flex-box</title>
-  <link rel="stylesheet" href="/css/estilo.css">
+  <style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+}
+
+#layout {
+max-width: 1200px;
+margin: 0 auto;
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.menu {
+display: flex;
+justify-content: space-between;
+background-color: #555;
+color: white;
+padding: 10px;
+}
+
+.menu div {
+padding: 10px 20px;
+background-color: #444;
+margin: 0 5px;
+cursor: pointer;
+text-align: center;
+flex: 1;
+}
+
+.container {
+display: flex;
+justify-content: space-around;
+padding: 20px;
+gap: 20px;
+}
+
+.item {
+background-color: #ccc;
+padding: 15px;
+flex: 1;
+}
+
+.item h2 {
+margin-bottom: 10px;
+}
+
+.footer {
+display: flex;
+justify-content: space-around;
+background-color: #999;
+padding: 15px;
+margin-top: 20px;
+}
+
+.footer div {
+background-color: #777;
+padding: 10px;
+color: white;
+text-align: center;
+flex: 1;
+margin: 0 5px;
+}
+</style>
+<link rel="stylesheet" href="/css/estilo.css">
 </head>
 
 <body>
-  <div id="container">
-    <div id="menu">
-      <ul>
-        <li class="item"><a href="/index.html">01</a></li>
-        <li class="item"><a href="/02.html">02</a></li>
-        <li class="item"><a href="/03.html">03</a></li>
-      </ul>
-    </div>
-    <div id="layout">
+  <div id="layout">
 
-      <!-- COLOQUE O SEU CÓDIGO AQUI DENTRO DESSA DIV -->
-    </div>
-  </div>
+<div class="Menu">
+<div>Menu 1</div>
+<div>Menu 2</div>
+<div>Menu 3</div>
+</div>
+
+<div class="container">
+<div class="item">
+<h3>Seja feliz</h3>
+<p>Será que é amor?</p>
+</div>
+<div class="item h2">
+<h3>Seja melhor</h3>
+<p>Será que é paixão?</p>
+</div>
+<div class="item h2">
+<h3>Seja especial</h3>
+<p>Parece muito mais...</p>
+</div>
+</div>
+
+<div class="footer">
+<div>Ro dapé</div>
+<div>Roda pé</div>
+<div>Rodapé</div>
+</div>
+
+</div>
 </body>
-
 </html>
