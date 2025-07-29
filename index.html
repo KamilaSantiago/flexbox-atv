@@ -1,118 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flex-box</title>
-  <link rel="stylesheet" href="/css/estilo.css">
-  <style>
-    *{
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-       font-family: Arial, Helvetica, sans-serif;
-    }
-
-    header, footer {
-      background-color: antiquewhite;
-      padding: 10px;
-      text-align: center;
-      font-weight: bold;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: row;
-      min-height: 400px;
-    }
-
-    .menu {
-      background-color: palevioletred;
-      width: 20%;
-      padding: 10px;
-    }
-
-    .content {
-      background-color: lightpink;
-      width: 60%;
-      padding: 10px;
-    }
-
-    .ads {
-      background-color: lightpink;
-      width: 20%;
-      padding: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    .ads div {
-      background-color: bisque;
-      height: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color:black;
-    }
-
-    footer {
-      background-color:lightcoral;
-      padding: 10px;
-      text-align: center;
-    }
-
-    .menu ul {
-      list-style-type: none;
-      margin-top: 10px;
-    }
-
-    .menu li {
-      margin: 5px 0;
-      background:#ddd;
-      padding: 5px;
-    }
-
-  </style>
+<meta charset="UTF-8">
+<title>Layout 1</title>
+<link rel="stylesheet" href="css/estilo.css">
 </head>
-
 <body>
-  <div id="container">
-    <div id="menu">
-      <strong>Menu</strong>
+<div id="layout" class="layout1">
+  <div id="menu">
       <ul>
-        <li class="item"><a href="/index.html">01</a></li>
-        <li class="item"><a href="/02.html">02</a></li>
-        <li class="item"><a href="/03.html">03</a></li>
+        <li class="item"><a href="/index.html">Início</a></li>
+        <li class="item"><a href="/02.html">Layout 2</a></li>
+        <li class="item"><a href="/03.html">Layout 3</a></li>
       </ul>
-    
-      <main class="content">
-        <strong>Content</strong>
-        <p> Foi com Badalasom que me apaixonei
-Fazendo o chifrinho com você, meu bem
-DJs Rafael, Josias e Darlan
-Eles dão a chicotada do amor
-
-É o Búfalo do Marajó, é o Búfalo do Marajó
-Tocando o berrante, você vai entender
-Que o meu amor é só pra você
-É o Búfalo do Marajó, é o Búfalo do Marajó
-Tocando o berrante, você vai entender
-Que o meu amor é só pra você </p>
-      </main>
-
-      <aside class="ads">
-        <div><a href= "imgs/baroes da pisadinha.jpg">Barões da pisadinha</a></div>
-        <div><a href= "imgs/búfalo.jpg">Búfalo</a></div>
-      </aside>
-   </div>
-  
-   <footer>Footer</footer>
-  </div>
+    </div>
+<header class="header">Trabalho desenvolvido pela diva Ka Santiago</header>
+<main class="main">
+<section class="artigo"><img src="imgs/búfalo.jpg" class="img" alt="Foto bafônica"></section>
+<section class="artigo">Vou escrever mais de um milhão de canções pra você ouvir
+Que meu amor é teu, teu sorriso me faz sorrir,
+Vou de Marte até a Lua, cê sabe já tô na tua,
+Não cabe tanta saudade essa verdade nua e crua,
+Eu sei o que eu faço, nosso caminho eu traço,
+Um casal fora da lei ocupando o mesmo espaço,
+Se eu to contigo não ligo se o sol não aparecer,
+É que não faz sentido caminhar sem dar a mão pra você,
+Teu sonho impossível vai ser realidade,
+Sei que o mundo tá terrível mas não vai ser a maldade que
+Vai me tirar de você, eu faço você ver,
+pra tu sorrir eu faço o mundo inteiro saber que eu...</section>
+<aside class="menu">Menu</aside>
+</main>
+<footer class="footer">Rodapé</footer>
+</div>
 </body>
-
 </html>
